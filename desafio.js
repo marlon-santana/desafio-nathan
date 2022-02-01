@@ -32,36 +32,26 @@ const pessoas = [
   {nome:'Ester', idade: 2}
 ]
 
-
 const findReduce = pessoas.reduce((valorAnterior, valorAtual) => {
-  var Nome = pessoas[3].nome 
-  var Idade = pessoas[3].idade
+  var Busca = 'tiago'
+ 
+  if(valorAtual.nome === Busca ) {
+     valorAnterior = valorAtual
+  }
+  if(valorAtual !== Busca) {
+    valorAtual = undefined
 
+  }
+  console.log(valorAtual)
   
-   if (valorAtual.nome === Nome ){
-    console.log(valorAtual.nome)
-   }
-   if (valorAtual.nome !== Nome ){
-    console.log(undefined)
-   }
+  return valorAnterior
   
-  // { nome: 'yuri', idade: 2 }     valorAtual
-  // []                             valorAnterior
-  // { nome: 'tiago', idade: 20 }   valorAtual
-  // []                             valorAnterior
-  // undefined
-  // { nome: 'filipe', idade: 13 }  valorAtual
-  // []                             valorAnterior
-  // undefined
-  // { nome: 'vanessa', idade: 20 } valorAtual
-  // []                             valorAnterior
-  // undefined
-  // { nome: 'Ester', idade: 2 }   valorAtual
-  // []                            valorAnterior
-  // undefined
+},undefined)
 
-  return
-  
-},)
+console.log(findReduce) 
 
-console.log(findReduce)
+
+
+
+
+
