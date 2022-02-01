@@ -37,6 +37,7 @@ const findReduce = pessoas.reduce((valorAnterior, valorAtual) => {
   var Nome = pessoas[3].nome 
   var Idade = pessoas[3].idade
 
+  
    if (valorAtual.nome === Nome ){
     console.log(valorAtual.nome)
    }
