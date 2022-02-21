@@ -24,6 +24,7 @@ const nums = [10, 20,30,40]
 //   console.log(Find)
 // //retorno 20
 
+
 const pessoas = [
   {nome:'yuri', idade: 2},
   {nome:'tiago',idade: 20},
